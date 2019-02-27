@@ -2,16 +2,25 @@ html,body {
     width: 100%;
     height: 100%;
 }
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+}
 .lt_container {
     width: 100%;
     max-width: 640px;
     min-width: 320px;
     height: 100%;
-    background-color: pink;
+    background-color: #fff;
     margin: 0 auto;
     position: relative;
     padding-top: 45px;
     padding-bottom: 55px;
+    overflow: hidden;
 }
 .lt_header {
     height: 45px;
@@ -20,8 +29,35 @@ html,body {
     position: absolute;
     top: 0;
     left: 0;
+    padding: 0 45px;
     /* z-index: 666; */
 }
+.lt_header h3 {
+    line-height: 45px;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+}
+.icon_left,.icon_right {
+    display: block;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    /* background-color: pink; */
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+}
+.icon_left {
+    left: 0;
+}
+.icon_right {
+    right: 0;
+}
+
 .lt_footer {
     width: 100%;
     height: 55px;
@@ -30,7 +66,34 @@ html,body {
     bottom: 0;
     left: 0;
 }
+.lt_footer li {
+    float: left;
+    width: 25%;
+
+}
+.lt_footer li a {
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.lt_footer li a.current {
+    color: orange;
+}
+.lt_footer li p {
+    color: #fff;
+    text-align: center;
+    padding: 0;
+}
+
+.lt_footer li a.current p {
+    color: orange
+}
+
 .lt_main {
     width: 100%;
     height: 100%;
+    position: relative;
 }
